@@ -1,10 +1,11 @@
+Description: "This CloudFormation stack deploys and configures Eugenie EC2 in a us-west region."
 Resources:
   Ec2Instance:
-  Type: AWS::EC2::Instance
-  Properties:
-    InstanceType: t2.micro
-    AvailabilityZone: us-west-1a
-    ImageId: ami-015e832ac6a60f0de
-    Tags:
-      - Key: Name
-        Value: Eugenie
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      AvailabilityZone: us-west-1a
+      ImageId: ami-015e832ac6a60f0de
+      Tags:
+        - Key: Name
+          Value: Eugenie
